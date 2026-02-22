@@ -9,10 +9,10 @@ nichtanalytisch.pdf:	nichtanalytisch.tex
 	pdflatex nichtanalytisch.tex
 
 wurzel.png:	wurzel.pov
-	povray +A0.1 -W1920 -H1080 -Owurzel.png wurzel.pov
+	povray +A0.1 -W3840 -H2160 -Owurzel.png wurzel.pov
 
 wurzel.jpg:	wurzel.png Makefile
-	magick -extract 1900x850+0+132 wurzel.png wurzel.jpg
+	magick -extract 2640x2160+584+0 wurzel.png wurzel.jpg
 
 wurzel.pdf:	wurzel.tex wurzel.jpg
 	pdflatex wurzel.tex

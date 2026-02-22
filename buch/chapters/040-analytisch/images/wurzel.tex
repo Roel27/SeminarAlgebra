@@ -17,9 +17,11 @@
 \setboolean{showgrid}{true}
 \setboolean{showgrid}{false}
 \def\breite{7}
-\def\hoehe{4}
+\def\hoehe{6}
 
 \begin{tikzpicture}[>=latex,thick]
+
+\clip (-6.3,-5.5) rectangle (6.3,5.15);
 
 % Povray Bild
 \node at (0,0) {\includegraphics[width=12.6cm]{wurzel.jpg}};
@@ -32,8 +34,12 @@
 \fill (0,0) circle[radius=0.05];
 }{}
 
-\node at (6.3,1.0) [above left] {$\operatorname{Im} z$};
-\node at (2.75,-1.9) [below] {$\operatorname{Re} z$};
+\node at (6.3,-2.2) [above left] {$\operatorname{Im} z$};
+\node at (2.75,-5.05) [below] {$\operatorname{Re} z$};
+\draw[->] (-4,0.2) -- (-4,-1.5);
+\node at (-4,-0.65) [left] {$\pi$};
+\node at (-5.55,-3.15) {$\mathbb{C}$};
+\node at (-3.55,3.55) {$M$};
 
 \end{tikzpicture}
 
